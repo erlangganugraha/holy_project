@@ -11,5 +11,7 @@ Jadi jangan hafal syntaxnya, tapi pahami aja. Karena udah paham syntaxnya soalny
 4. Soal tentang Blog
 5. Soal tentang Barang
 
+# Selamat Belajar, good luck!!!
+
 ## Notice 
 Ask me, contact me in line : erlangga74
