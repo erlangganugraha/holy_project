@@ -1,0 +1,40 @@
+LANGKAH KERJA
+1.DATABASE
+2.BUAT FOLDER DI HTDOCS
+3.BUKA SUBLIME
+4.UBAH config.php 
+	- $config['base_url'] = 'http://localhost/UP_10514167_WEB/';
+5.UBAH AUTOLOAD
+	-$autoload['libraries'] = array('database');
+	-$autoload['helper'] = array('url');
+6.UBAH database.php
+	- root
+	- nama database
+7.Buat controller baru
+	film.php
+Edit :
+	<?php
+	class Film extends CI_Controller
+	{
+	
+	function index()
+	{
+		# code...
+	}
+	}
+8.Buat .htaccess (menghilangkan index.php)
+
+	RewriteEngine On 
+	RewriteCond %{REQUEST_FILENAME} !-f 
+	RewriteCond %{REQUEST_FILENAME} !-d 
+	RewriteRule ^(.*)$ index.php/$1 [L]
+9.Buat Tampil.php di view
+10.Buat html (tabel) di Film.php
+11.Buat modelnya (ngambil data dari database) 
+12.Buat Koneksi.php
+ (ngambil dari user_guide -> query_builder -> join
+13. Buat kodingan class 
+14.	Tambah Controller buat model	
+	$this->load->model('Koneksi');
+	$this->Koneksi->Tampil_Data_Utama();
+
